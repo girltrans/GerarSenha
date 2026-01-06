@@ -1,6 +1,6 @@
 {
-    "short_name": "Gerador De Senha",
-    "name": "Gerador De Senha",
+    "short_name": "Gerar Senha",
+    "name": "Gerar Senha",
     "icons": [
         {
             "src": "./favicon.ico",
