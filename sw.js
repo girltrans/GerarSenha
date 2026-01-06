@@ -1,4 +1,4 @@
-const CACHE_NAME = 'GeradorDeSenha-v1';
+const CACHE_NAME = 'GerarSenha-v1';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
