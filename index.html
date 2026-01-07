@@ -5,71 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Gerar Senha">
-    <meta name="application-name" content="Gerar Senha">
+    <meta name="apple-mobile-web-app-title" content="Guia De Segurança">
+    <meta name="application-name" content="Guia De Segurança">
 
-    <title>Gerar Senha</title>
-    <meta name="title" content="Gerar Senha">
-    <meta name="description" content="Gere senhas aleatórias ultra-seguras com apenas um clique.">
+    <title>Guia De Segurança</title>
+    <meta name="title" content="Guia De Segurança">
+    <meta name="description" content="Guia para proteger as suas contas. (Minecraft, Discord, Steam, etc.) Melhorar a segurança das contas para garantir que estas não sejam roubadas!">
+	<meta content="http://guiadeseguranca.vercel.app" property="og:url"/>
+	<meta content="https://guiadeseguranca/images/guiadeseguranca.png" property="og:image"/>
     <meta name="theme-color" content="#000000">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gerarsenha.vercel.app">
-	<meta content="http://gerarsenha.vercel.app" property="og:url"/>
-    <meta property="og:image" content="https://gerarsenha.vercel.app/images/gerarsenha.png">
-    <meta property="og:title" content="Gerar Senha">
-    <meta property="og:site_name" content="Gerar Senha">
-    <meta property="og:description" content="Gere senhas aleatórias ultra-seguras com apenas um clique.">
+    <meta property="og:url" content="https://guiadeseguranca.vercel.app">
+    <meta property="og:image" content="https://guiadeseguranca/images/guiadeseguranca.png">
+    <meta property="og:title" content="Guia De Segurança">
+    <meta property="og:site_name" content="Guia De Segurança">
+    <meta property="og:description" content="Guia para proteger as suas contas. (Minecraft, Discord, Steam, etc.) Melhorar a segurança das contas para garantir que estas não sejam roubadas!">
 
-    <meta property="twitter:url" content="https://gerarsenha.vercel.app">
-    <meta property="twitter:title" content="Gerar Senha">
-    <meta property="twitter:description" content="Gere senhas aleatórias ultra-seguras com apenas um clique.">
-	<meta content="https://gerarsenha.vercel.app/images/gerarsenha.png" name="twitter:image"/>
-    <meta property="twitter:image" content="https://gerarsenha.vercel.app/images/gerarsenha.png">
+    <meta property="twitter:url" content="https://github.com/girltrans">
+    <meta property="twitter:title" content="Guia De Segurança">
+    <meta property="twitter:description" content="Guia para proteger as suas contas. (Minecraft, Discord, Steam, etc.) Melhorar a segurança das contas para garantir que estas não sejam roubadas!">
+	<meta content="https://guiadeseguranca.vercel.app/images/guiadeseguranca.png" name="twitter:image"/>
+    <meta property="twitter:image" content="https://guiadeseguranca/images/guiadeseguranca.png">
 
     <link rel="preload" as="image" href="./icons/github.png">
-    <link rel="preload stylesheet" href="./css/style.css" as="style">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preload stylesheet" href="./css/style.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=block" rel="stylesheet">
-    <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/shift-away.css" as="style" crossorigin="anonymous">
     <link rel="manifest" href="./manifest.json">
 
     <link rel="icon" href="./favicon.ico">
     <link rel="apple-touch-icon" href="./favicon.ico">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
-        crossorigin="anonymous" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.umd.min.js"
-        crossorigin="anonymous" type="module"></script>
-    <script src="./js/password.js" defer></script>
-    <script>window.addEventListener("DOMContentLoaded",()=>document.body.classList.remove("preload"))</script>
+    <link rel="prefetch" href="./js/generate.js" as="script">
+    <link rel="prefetch" href="./guia/discord.js" as="script">
+    <link rel="prefetch" href="./guia/minecraft.js" as="script">
+    <link rel="prefetch" href="./guia/guides/steam.js" as="script">
+    <link rel="prefetch" href="./guia/tiktok.js" as="script">
+    <link rel="prefetch" href="./guia/twitch.js" as="script">
+    <link rel="prefetch" href="./guia/epic.js" as="script">
+    <link rel="prefetch" href="./guia/snapchat.js" as="script">
+    <link rel="prefetch" href="./guia/kick.js" as="script">
+    <link rel="prefetch" href="./guia/x.js" as="script">
+    <link rel="prefetch" href="./guia/valorant.js" as="script">
+    <link rel="prefetch" href="./guia/instagram.js" as="script">
+    <link rel="prefetch" href="./guia/playstation.js" as="script">
+    <link rel="prefetch" href="./guia/steam.js" as="script">
+    <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
 </head>
 <body class="preload">
     <a rel="nofollow" href="https://github.com/girltrans" target="_blank" title="GitHub Repositório"
         class="github"><img src="./icons/github.png" alt="GitHub Icon" title="GitHub"></a>
     <div class="container">
-        <h1>Gerar Senha</h1>
-        <span id="hidden-span" class="hidden-span"></span>
-	<form>
-		<div class="password-wrapper">
-			<textarea id="secret" placeholder="Senha" readonly rows="1"></textarea>
-			<button type="button" id="toggle-visibility" title="Mostrar/Esconder Senha">
-            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-			</button>
-		</div>
-	</form>
-        <p class="copytext">clique para copiar / <a href="javascript:regeneratePass()" class="regenerate">regenerar</a></p>
-        <div class="settings">
-		<div class="length">
-			<label for="lengthinp"><p>comprimento:</p></label>
-			
-			<input id="lengthinp" min="4" max="255" value="24" type="range" style="--percent: 36.95652173913043%;">
-			
-			<input type="text" id="manualInput" maxlength="3">
-
-			<div class="range-label" id="rangeLabel" style="left: 61px;">24</div>
-		</div>
-            <p id="special">caracteres especiais: <a href="javascript:setSpecial(true)" id="yes">sim</a> / <a class="toggled" href="javascript:setSpecial(false)" id="no">não</a></p>
+        <h1><a href="./index.html">Guia De Segurança</a></h1>
+        <h2></h2>
+        <h3>Proteger As Suas Contas Nas Redes Sociais</h3>
+        <div class="pages">
+            <a href="./minecraft.html">
+                <div>
+                    <img src="./icons/minecraft.png" width="32" alt="Minecraft Icon" title="Minecraft">
+                </div>
+            </a>
+            <a href="./discord.html">
+                <div>
+                    <img src="./icons/discord.png" width="32" alt="Discord Icon" title="Discord">
+                </div>
+            </a>
+            <a href="./steam.html">
+                <div>
+                    <img src="./icons/steam.png" width="32" alt="Steam Icon" title="Steam">
+                </div>
+            </a>
+            <a href="./x.html">
+                <div>
+                    <img src="./icons/x.png" width="42" alt="Twitter Icon" title="X">
+                </div>
+            </a>
+            <a href="./playstation.html">
+                <div>
+                    <img src="./icons/playstation.png" width="32" alt="Playstation Icon" title="PlayStation">
+                </div>
+            </a>
+            <a href="./instagram.html">
+                <div>
+                    <img src="./icons/instagram.png" width="32" alt="Instagram Icon" title="Instagram">
+                </div>
+            </a>
+            <a href="./twitch.html">
+                <div>
+                    <img src="./icons/twitch.png" width="32" alt="Twitch Icon" title="Twitch">
+                </div>
+            </a>
+            <a href="./valorant.html">
+                <div>
+                    <img src="./icons/valorant.png" width="42" alt="Valorant Icon" title="Valorant">
+                </div>
+            </a>
+            <a href="./epic.html">
+                <div>
+                    <img src="./icons/epic.png" width="32" alt="EpicGames Icon" title="EpicGames">
+                </div>
+            </a>
+            <a href="./kick.html">
+                <div>
+                    <img src="./icons/kick.png" width="32" alt="Kick Icon" title="Kick">
+                </div>
+            </a>
+            <a href="./tiktok.html">
+                <div>
+                    <img src="./icons/tiktok.png" width="42" alt="TikTok Icon" title="TikTok">
+                </div>
+            </a>
+            <a href="./snapchat.html">
+                <div>
+                    <img src="./icons/snapchat.png" width="42" alt="Snapchat Icon" title="Snapchat">
+                </div>
+            </a>       
+            <a href="./2fa.html" width="42" alt="2fa Icon" title="Autenticação De 2 Fatores">
+                <div>
+                    2FA
+                </div>
+            </a>
         </div>
     </div>
 <script>
